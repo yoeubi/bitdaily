@@ -16,6 +16,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/full-slider.css" rel="stylesheet">
+    <style>
+    	
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+    </style>
 
   </head>
 
@@ -58,21 +62,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('/bitdaily/images/salad-2068220_1280.jpg')">
+          <div class="carousel-item active" style="background-image: url('${pageContext.request.contextPath}/images/banana.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>식단 기록</h3><br>
               <p><button>ViewMore</button></p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('/bitdaily/images/jogging-2343558_1280.jpg')">
+          <div class="carousel-item" style="background-image: url('${pageContext.request.contextPath}/images/bicycle.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>운동 기록</h3><br>
               <p><button>ViewMore</button></p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('/bitdaily/images/pencil-3326180_1280.jpg')">
+          <div class="carousel-item" style="background-image: url('${pageContext.request.contextPath}/images/pencil.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>다이어트 일기</h3><br>
               <p><button>ViewMore</button></p>
