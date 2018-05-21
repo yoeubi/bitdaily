@@ -25,34 +25,6 @@
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">B I T   D A I L Y</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">다이어리
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">리포트</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">체중기록</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">레시피 검색</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -94,14 +66,6 @@
       </div>
     </header>
     
-<!--     Footer -->
-    <footer class="py-5 bg-dark"><br>
-      <div class="container">
-        <p class="m-0 text-center text-white"> BITCAMP MINI WEB PROJECT3 TEAM3 © 2018. ALL RIGHTS RESERVED.</p>
-      </div>
-<!--       /.container -->
-    </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
