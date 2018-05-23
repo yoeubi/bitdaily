@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 /* 웹폰트 */
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('//cdn.rawgit.com/young-ha/webfont-archive/master/css/NanumSquare.css');
 
 	* {
+	    font-family: 'NanumSquare', 'Sans-serif';
 		margin:0px;
 		padding:0px;
 		border:0px;
@@ -15,13 +16,14 @@
 	   }
 		
 	footer {
+		color: #aaa;
 		display: inline-block;
 		width: 100%;
 		float: left;
 		height: 50px;
 		text-align: center;
 		}  
-		
+
 	.content {
 		margin-top: 90px; 
 		width : 100%;
