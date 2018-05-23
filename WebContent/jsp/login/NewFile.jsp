@@ -10,7 +10,6 @@
 	video { width: 100%; min-width: 1600px; }
 
 	
-	
 
 /* login Form */
 body {
@@ -18,6 +17,7 @@ body {
   font-size: 14px;
   background: #f2f2f2;
 }
+h2 { font-weight: bolder;}
 
 .clearfix:after {
   content: "";
@@ -28,7 +28,7 @@ body {
 }
 
 .form_wrapper {
-  background: #fff;
+  background: rgba(225,225,225,0.1);
   width: 550px;
   max-width: 100%;
   box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
   top: 300px;
   position: relative;
   z-index: 1;
-  border-top: 5px solid #D65BC1;
+  border-top: 5px solid #dcdcdc;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -143,7 +143,7 @@ body {
   border: 1px solid #f5ba1a;
 }
 .form_wrapper input[type="submit"] {
-  background: #F479DF;
+  background: #BCA9F5;
   height: 35px;
   line-height: 35px;
   width: 100%;
@@ -157,6 +157,8 @@ body {
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
+   box-shadow: 2px 2px 2px #111;
+   opacity: 0.9;
 }
 .form_wrapper input[type="submit"]:hover {
   background: #C71585;
@@ -172,9 +174,6 @@ body {
   border-left: 1px solid #ccc;
 }
 
-.remember_me {
-  display: flex;
-}
 
 .forgot_pw {
   text-align: right;
@@ -203,22 +202,30 @@ body {
   width: 35px;
 }
 .social_btn.fb {
+ opacity: 0.9;
   background: #5EC75E;
+  box-shadow: 2px 2px 2px #111;
 }
 .social_btn.fb span {
   background: #3CA03C;
+  box-shadow: 2px 2px 2px #111;
 }
 .social_btn.tw {
+ opacity: 0.9;
   background: #FFD228;
+  box-shadow: 2px 2px 2px #111;
 }
 .social_btn.tw span {
   background: #FFC81E;
+  box-shadow: 2px 2px 2px #111;
 }
 
 .create_account a {
-  color: #D65BC1;
+  color: white;
   text-decoration: none;
   font-weight: bold;
+/*    box-shadow: 2px 2px 2px #111; */
+  
 }
 
 .bottom_row {
@@ -227,7 +234,8 @@ body {
 }
 .bottom_row a {
   text-decoration: none;
-  color: #ababab;
+  color: #fff;
+/*    box-shadow: 2px 2px 2px #111; */
 }
 
 .credit {
@@ -259,6 +267,7 @@ body {
   .remember_me {
     padding-bottom: 20px;
   }
+  
 }
 
 	
@@ -267,13 +276,11 @@ body {
 </head>
 <body>
 <!-- 배경 -->
-      <figure class='vid'>
-         <video autoplay="autoplay" loop="loop" muted="muted">
-            <source src="${pageContext.request.contextPath}/images/askyfullofstarsmp4.mp4">
-         </video>
-      </figure>
-      
-      
+  <figure class='vid'>
+     <video autoplay="autoplay" loop="loop" muted="muted">
+        <source src="${pageContext.request.contextPath}/images/askyfullofstarsmp4.mp4">
+     </video>
+  </figure>
       
       
   <div class="form_wrapper">
@@ -286,7 +293,7 @@ body {
         <div class="social_btn fb"><a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></i></span>Sign in with Naver</a></div>
         <div class="social_btn tw"><a href="#"><span><i class="fa fa-twitter" aria-hidden="true"></i></span>Sign in with KaKaoTalk</a></div>
         <div class="row clearfix create_account">
-          <div><a href="#">&nbsp;Create an Account</a></div>
+          <div><a href="SignUpForm.jsp">&nbsp;Create an Account</a></div>
         </div>
       </div>
       <div class="col_half last">
@@ -307,13 +314,5 @@ body {
     </div>
   </div>
 </div>
-<p class="credit"> BITCAMP MINI WEB PROJECT3 TEAM3 © 2018. ALL RIGHTS RESERVED.</p>
-      
-      
-      
-      
-      
-      
-      
 </body>
 </html>
