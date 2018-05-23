@@ -6,11 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title><sitemesh:write property="title" /></title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/full-slider.css" rel="stylesheet">
 <style>
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 </style>
+<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
 <sitemesh:write property="head" /> 
 </head>
 <body>
@@ -25,8 +24,8 @@
 	  <c:import url="/jsp/decorator/footer.jsp" />
 	</div>	
   </div>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="${pageContext.request.contextPath}/css/vendor/jquery/jquery.min.js"></script>
+  <script src="${pageContext.request.contextPath}/css/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
