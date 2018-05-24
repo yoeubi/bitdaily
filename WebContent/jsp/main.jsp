@@ -9,6 +9,15 @@
     <title>Bit Daily</title>
 <!--     Custom styles for this template -->
     <link href="${pageContext.request.contextPath}/css/full-slider.css" rel="stylesheet">
+    <style>
+    .carousel-item{ 
+       height: 600px;  
+      }  
+    .content {
+       width: 100%;
+	   height: auto; 
+    }
+    </style>
   </head>
   <body>
     <header>
