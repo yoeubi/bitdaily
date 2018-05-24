@@ -45,6 +45,10 @@ border: 1px solid #aaa;
 .graphBox {
 margin : 20px 70px;
 }
+#weight {
+text-decoration: none;
+color : black;
+}
 </style>
 </head>
 <body>
@@ -65,7 +69,7 @@ margin : 20px 70px;
 
 <div id="side">
 <h2><img src="/bitdaily/images/icon/ruler.png" width="50px" height="50px"> 체중기록</h2><hr>
-	<div class="but">　 <a href="#"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px"></a> 오늘체중기록</div>
+	<div class="but">　 <a href="#" id="weight"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px"> 오늘체중기록</a></div>
 	<hr>
 	2018.05.23.　45kg
 	<hr>
