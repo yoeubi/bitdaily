@@ -22,15 +22,9 @@
               <a class="nav-link" href="#">체중기록</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">레시피 검색</a>
+              <a class="nav-link" href="#">레시피</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-
-
-
-
-
