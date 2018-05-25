@@ -9,9 +9,10 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/common.css">
 <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
 <sitemesh:write property="head" /> 
+<style type="text/css">
+</style>
 </head>
 <body>
-  <div class="container">
   
 	<div class="header">
 	  <c:import url="/jsp/decorator/topMenu.jsp" />
@@ -25,7 +26,6 @@
 	  <c:import url="/jsp/decorator/footer.jsp" />
 	</div>	
 	
-  </div>
   
   <script src="${pageContext.request.contextPath}/css/vendor/jquery/jquery.min.js"></script>
   <script src="${pageContext.request.contextPath}/css/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
