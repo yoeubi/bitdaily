@@ -7,13 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"> -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
-<link rel="stylesheet" href="commondiary.css" >
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
+<link rel="stylesheet" href="/bitdaily/css/common/commondiary.css" >
 <style>
 	#noteregist > input , #titleregist > input {
 		width : 90%;
@@ -70,7 +67,7 @@
 	</div>
 	
 	<div class="mainMenu">
-		<div id="todaydiary"><img src="111061-200.png"><span>오늘의 일기</span></div>
+		<div id="todaydiary"><img src="/bitdaily/images/111061-200.png"><span>오늘의 일기</span></div>
 		<div id="desc"><span>오늘의 반성 일기(30자) 내외</span></div>
 		<div id="content">
 			<div id="titleregist"><input type="text" name="title" id="title" value="제목을 입력하세요"><button>등록</button> </div>
@@ -87,13 +84,15 @@
 
 <script>
       $('#summernote').summernote({
-        toolbar: [
-            // [groupName, [list of button]]
-            ['style', ['bold', 'italic', 'underline', 'clear']],
-            ['font', ['strikethrough', 'superscript', 'subscript']],
-            ['fontsize', ['fontsize']],
-            ['color', ['color']]
-        ],  
+   	  	toolbar: [
+   		    // [groupName, [list of button]]
+   		    ['style', ['bold', 'italic', 'underline', 'clear']],
+   		    ['font', ['strikethrough', 'superscript', 'subscript']],
+   		    ['fontsize', ['fontsize']],
+   		    ['color', ['color']],
+   		    ['para', ['ul', 'ol', 'paragraph']],
+   		    ['height', ['height']]
+   		],
         placeholder: '일기를 입력하세요',
         height: 400,
         minHeight: 400,
