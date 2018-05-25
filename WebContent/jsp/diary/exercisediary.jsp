@@ -2,132 +2,19 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="${pageContext.request.contextPath}/css/common/commondiary.css" rel="stylesheet">
 <style>
-.diary {
-display: inline-block;
-margin: 5px;
-width : 70%;
-height: auto;
-}
-.dailyStatistics{
-margin: 5px;
-display: inline-block;
-float: right;
-width: 28%;
-height: 700px;
-border: 1px solid #aaa;
-}
-.date {
-font-size: x-large;
-width: 100%;
-margin: 5px;
-text-align: center;
-}
-.calorie {
-font-size: medium;
-}
-.subMenu > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #C3E7FA;
-}
-
-.subMenu > ul > li {
-    float: left;
-    width: 33.33333%;
-    border: 1px solid white;
-}
-
-.subMenu > ul > li a {
-    display: block;
-    color: white;
-    font-weight: bold; 
-    font-size: large;
-     text-shadow: 0.5px 0.5px 0.5px #c6d5f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.subMenu >  ul > li a:hover {
-    background-color: #27aae1;
-}
-
-.sub_active {
-    background-color: #27aae1;
-}
-.food_record {
-	width: 90%;
-}
-.icon {
-	color: #c6d5f2;
-	font-weight: bold;
-	font-size: large;
-	width: 40px;
-	padding: 1px 1px;
-}
-.but {
-	margin-left:30px;
-	border: 1px solid #aaa;
-	width: 600px;
-	border-radius: 20px;
-}
-.select {
-	margin-left:30px;
-	border: 1px solid #aaa;
-	width: 600px;
-	height: 300px;
-	border-radius: 20px;
-}
-.result {
-	margin-left:30px;
-	border: 1px solid #aaa;
-	width: 600px;
-		height: 300px;
-	border-radius: 20px;
-}
-.result_area {
-	float: left;
-	margin: 10px auto;
-}
-.result_pic {
-	width: 185px;
-	height: 185px;
-	border: 1px solid #aaa;
-	padding: 4px 4px;
-	border-radius: 5px;
-	margin: 7px 7px;
-}
-.result_content {
-	width: 185px;
-	height: 185px;
-	text-align: center;
-		padding: 4px 4px;
-			margin: 7px 7px;
-}
-.searchBox {
-	margin-left: 30px;
-	width: 460px;
-	border: 1px solid #aaa;
-}
-#search_list {
-	margin: 10px 50px;
-}
 .search-container {
   width: 100%;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
-
 input#search-bar {
   margin: 0px -75px 0px 0px;
   width: 80%;
@@ -162,14 +49,7 @@ input#search-bar:focus:-ms-placeholder {
   top: -15px;
   right: 65px;
 }
-.mainMenu { 
-	width: 100%; height: 633px;
-	border: 1px dashed silver;
-	border-radius: 30px;
-	margin: 10px 0px 0px 0px;
-	position: relative;
-}
-p { font-size: 25px;
+#title { font-size: 25px;
     padding: 20px;
     margin: 10px 32px; }
 table {
@@ -217,7 +97,7 @@ button:active { background-color: rgba(0,50,200,0.1) }
 	</div>
 	
 	<div class="mainMenu">
-		<p><img src="${pageContext.request.contextPath}/images/icon/dumbbell.png"/> 오늘의 운동 다이어리</p>
+		<p id="title"><img src="${pageContext.request.contextPath}/images/icon/dumbbell.png"/> 오늘의 운동 다이어리</p>
 		<table>
 			<tr>
 				<td>걷기</td>
