@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <style>
 .content_box {
 display: inline-block;
@@ -49,6 +50,16 @@ margin : 20px 70px;
 text-decoration: none;
 color : black;
 }
+.buts {
+	border: 1px solid #00AFFF;
+	border-radius: 8px;
+	width: 50px; height: 25px;
+	color: #00AFFF;
+	font-size: 13px;
+}
+.buts:hover { cursor: pointer; }
+.buts:focus { outline: none; }
+.buts:active { background-color: rgba(0,50,200,0.1) }
 </style>
 </head>
 <body>
@@ -86,7 +97,11 @@ color : black;
 	2018.05.17.　53kg	
 	
 </div>
-
+<script type="text/javascript">
+$("#weight").click(function () {
+	$(".but").html("<input type='text' name='weightToday' style='border:0.5px solid #aaa'>　<button class='buts'>등록</button>");
+});
+</script>
 <script type="text/javascript">
 var data = {
 	    labels: [

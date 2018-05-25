@@ -7,22 +7,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <style>
 .diary {
 display: inline-block;
 margin: 5px;
-width : 70%;
+width : 100%;
 height: auto;
 }
 .dailyStatistics{
 margin: 5px;
 padding: 30px;
-display: inline-block;
-float: right;
+ display: inline-block; 
 width: 28%;
 height: 600px;
 border: 1px dotted #aaa;
-	border-radius: 20px;
+border-radius: 20px;
+float: right;
 }
 .date {
 font-size: x-large;
@@ -83,7 +84,7 @@ table {
 	text-shadow: 1px 1px 1px #c6d5f2;
 	
 }
-.but {
+.add {
 	margin-left:30px;
 	margin-top: 3px;
 	border: 1px dashed #c3e7fa;
@@ -162,6 +163,11 @@ table {
 	border-radius: 20px;
 }
 
+a, a:hover {
+text-decoration: none;
+color : black;
+}
+
 
 </style>
 </head>
@@ -177,6 +183,7 @@ table {
 
 
 <div class="diary">
+	<div class="dailyStatistics">통계영역</div>
 	<div class="subMenu">
 	<ul>
 	<li><a href="#" class="sub_active">식단</a></li>
@@ -185,69 +192,32 @@ table {
 	</ul>
 	</div>
 	
-	
-	
 	<div id="morning">
 	<div class="icon">아침</div>
-	<div class="but">　　 <a href="#"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px"></a>　음식 추가</div>
+	<div>
+	<div class="add">　　 <a href="#" class="foodAdd"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px">　음식 추가</a></div>
+	</div>
 	</div>
 	
 
 	<div id="lunch">
 	<div class="icon">점심</div>
-	
-
-	<div class="select">
-	<input type="text" name="foodName" class="searchBox"/> <img src="/bitdaily/images/icon/search.png" width="30px" height="30px">
-	<a data-toggle="modal" href="#visionModal"><img src="/bitdaily/images/icon/camera.png" width="40px" height="40px"></a>
-	
-
-	<div id="search_list">
-	<input type="checkbox" name="rice" id="rice" value="1" /><lable for="rice"> 밥</lable>
-	<input type="text" name="gram" class="input_gram" placeholder="　　gram"/><br><br>
-	
-	<input type="checkbox" name="rice2" id="rice2" value="2" /><lable for="rice2"> 흑미밥</lable>
-	<input type="text" name="gram" class="input_gram" placeholder="　　gram"/><br><br>
-	
-	<input type="checkbox" name="rice3" id="rice3" value="3" /><lable for="rice3"> 잡곡밥</lable>
-	<input type="text" name="gram" class="input_gram" placeholder="　　gram"/><br><br>
-	<div id="buttons">
-	<button class="buts">취소</button>　<button class="buts">등록</button>
+	<div>
+	<div class="add">　　 <a href="#" class="foodAdd"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px">　음식 추가</a></div>
 	</div>
-	</div>
-	
-</div>
 	</div>
 
 	<div id="dinner">
 	<div class="icon">저녁</div>
-		<div class="select">
-	<input type="text" name="foodName" class="searchBox"/> <img src="/bitdaily/images/icon/search.png" width="30px" height="30px">
-	<a data-toggle="modal" href="#visionModal"><img src="/bitdaily/images/icon/camera.png" width="40px" height="40px"></a>
-	
-
-	<div id="search_list">
-	<input type="checkbox" name="rice" id="rice" value="1" /><lable for="rice"> 밥</lable>
-	<input type="text" name="gram" class="input_gram" placeholder="　　gram"/><br><br>
-	
-	<input type="checkbox" name="rice2" id="rice2" value="2" /><lable for="rice2"> 흑미밥</lable>
-	<input type="text" name="gram" class="input_gram" placeholder="　　gram"/><br><br>
-	
-	<input type="checkbox" name="rice3" id="rice3" value="3" /><lable for="rice3"> 잡곡밥</lable>
-	<input type="text" name="gram" class="input_gram" placeholder="　　gram"/><br><br>
-	<div id="buttons">
-	<button class="buts">취소</button>　<button class="buts">등록</button>
+	<div>
+<!-- 	<div class="result"></div> -->
+	<div class="add">　　 <a href="#" class="foodAdd"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px">　음식 추가</a></div>
 	</div>
-	</div>
-	
-</div>
 	</div>
 
-	
-	
 <div id="snack">
 	<div class="icon">간식</div>
-	
+	<div>
 
 	<div class="result">
 	
@@ -285,11 +255,47 @@ table {
 	</div>
 	
 	</div> <!-- end .result -->
-	<div class="but">　　 <a href="#"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px"></a>　음식 추가</div>
+	
+	<div class="add">　　 <a href="#" class="foodAdd"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px">　음식 추가</a></div>
+	</div>
 	</div>
 
 
 </div><!-- end .diary -->
+
+<script type="text/javascript">
+	$(".foodAdd").on("click", function () {
+		var result = $(this).parent().parent();
+		$(this).parent().remove();
+		//search블럭 만드는 함수
+		makeSearchBox(result);
+	});
+	
+	function makeSearchBox(result) {
+		var search = "";
+		search += "<div class='select'>";
+		search += "<input type='text' name='foodName' class='searchBox'/> ";
+		search += "<img src='/bitdaily/images/icon/search.png' width='30px' height='30px'>";
+		search += "<a data-toggle='modal' href='#visionModal'><img src='/bitdaily/images/icon/camera.png' width='40px' height='40px'></a>";
+		search += "<div id='search_list'>";
+		search += "<input type='checkbox' name='rice' id='rice' value='1' /><lable for='rice'> 밥</lable>";
+		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
+		search += "<input type='checkbox' name='rice2' id='rice2' value='2' /><lable for='rice2'> 흑미밥</lable>";
+		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
+		search += "<input type='checkbox' name='rice3' id='rice3' value='3' /><lable for='rice3'> 잡곡밥</lable>";
+		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
+		search += "<div id='buttons'>";
+		search += "<button class='buts'>취소</button>　<button class='buts'>등록</button>";
+		search += "</div></div>";
+		result.html(search);
+	}
+	
+	function makeList() {
+		
+	}
+	
+	
+</script>
 
 
   <!-- Modal -->
@@ -318,7 +324,7 @@ table {
 
 
 
-<div class="dailyStatistics">통계영역</div>
+
 
 </body>
 </html>
