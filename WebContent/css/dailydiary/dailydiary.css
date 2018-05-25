@@ -1,0 +1,36 @@
+#noteregist > input , #titleregist > input {
+		width : 90%;
+		margin-right: 10px;
+}
+
+#noteregist > input {
+	visibility: hidden;
+}
+
+#todaydiary , #noteregist , #titleregist, #note {
+	margin-top : 20px;
+	margin-left: 20px;
+}
+
+#desc {
+	margin-left: 20px;
+	font-size: 0.8em;
+}	
+#noteregist > button , #titleregist > button {
+	background: white;
+	color:black;
+	border-radius: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+#noteregist > button:hover , #titleregist > button:hover {
+	background-color: black;
+	color: white;
+}
+
+#todaydiary > img {
+	width: 3%;
+	margin-right: 5px;
+}

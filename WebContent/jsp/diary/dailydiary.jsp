@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,40 +11,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
 <link rel="stylesheet" href="/bitdaily/css/common/commondiary.css" >
-<style>
-	#noteregist > input , #titleregist > input {
-		width : 90%;
-	}
-	
-	#todaydiary , #noteregist , #titleregist, #note {
-		margin-top : 20px;
-		margin-left: 20px;
-	}
-	#desc {
-		margin-left: 20px;
-		font-size: 0.8em;
-	}	
-	#noteregist > button , #titleregist > button {
-		background: white;
-		color:black;
-		border-radius: 30px;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-	
-	
-	#noteregist > button:hover , #titleregist > button:hover {
-		background-color: black;
-		color: white;
-	}
-	
-	#todaydiary > img {
-		width: 3%;
-		margin-right: 5px;
-	}
-	
-		
-</style>
+<link rel="stylesheet" href="/bitdaily/css/dailydiary/dailydiary.css" >
 </head>
 <body>
 
