@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="sweetalert2.css" />
 <script src="../../sweetalert/jquery-3.2.1.js"></script>
 <script src="sweetalert2.all.min.js"></script>
+
 <style>
  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
  * { 
@@ -154,7 +155,6 @@ input.check {
 		<hgroup>
 			<h1>User Info</h1> 
 		</hgroup>
-
 		<p class="input">ID</p>
 		<input class="place" type="text" name="id" value="hong" readonly="readonly">
 		<p class="input">Name</p>
@@ -170,39 +170,40 @@ input.check {
         <label for="under_13" class="light">Female</label>
         <input type="radio" id="Male" value="over_13" name="Male" checked="checked">
         <label for="over_13" class="light">Male</label>
-		<p class="input">Birth</p>
-	    <div class="input-group">
-	         <div class="col-third"><input class="birth" type="text" placeholder="01"/></div>
-			 <div class="col-third"><input class="birth" type="text" placeholder="01"/></div>
-	         <div class="col-third"><input class="birth" type="text" placeholder="1988"/></div>
-        </div>
+		<p class="input">Age</p><div class="input-group"><input class="place" type="text"></div>
 		<p class="input">키(cm)</p>
 		<input class="place" type="text" value="185">
 		<input class="btn-update" id="updatheight" type="submit" value="수정">
-		<p class="input">몸무게(gm)</p>
+		<p class="input">현재 몸무게(gm)</p>
 		<input class="place" type="text" value="85" >
 		<input class="btn-update" id="updatweight" type="submit" value="수정">				
-		
+		<p class="input">목표 몸무게(gm)</p>
+		<input class="place" type="text">
+		<input class="btn-update" id="updatgoalweight" type="submit" value="수정">
 		<footer>
 			<input class="btn" type="submit" id="updateinfo" value="수정">
 			<input class="btn-deletuser" id="deletuser"value="탈퇴">
-			
 		</footer>
 	</div>
-	</div>
+</div>
 	<script>
-		
-	
+	//이메일 수정
 		$("#updateemail").click(function () {
 			swal('수정 완료!')
 		});
+	//키 수정
 		$("#updatheight").click(function () {
 			swal('수정 완료!')
 		});
+	//몸무게 수정
 		$("#updatweight").click(function () {
 			swal('수정 완료!')
 		});
-		
+	//목표 몸무게 수정
+		$("#updatgoalweight").click(function () {
+			swal('수정 완료!')
+		});
+	//모든 info 수정
 		$("#updateinfo").click(function () { 
 			swal({
 				  title: '수정 하시겠습니까 ?',
@@ -222,7 +223,7 @@ input.check {
 				  }
 				})
 		});
-	
+	//탈퇴
 		$("#deletuser").click(function () {
 			swal({
 				  title: 'ㅠ ^ ㅠ탈퇴 하시겠습니까 ?',
@@ -242,7 +243,7 @@ input.check {
 				  }
 				})
 		});
-		
+	//비번 수정
 		$("#updatepass").click(function () {
 			swal.mixin({
 			  input: 'text',
@@ -269,9 +270,6 @@ input.check {
 			})
 		});
 	</script>
-	
-
-	
-
 </body>
+
 </html>
