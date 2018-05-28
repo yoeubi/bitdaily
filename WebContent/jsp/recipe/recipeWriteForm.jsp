@@ -8,6 +8,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <link href="${pageContext.request.contextPath}/css/common/recipeWriteForm.css" rel="stylesheet">
 <style>
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 300px;
+  max-height: 300px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+body { color: #948f8b;}
 .imgDiv {
 	width: 100%; height: 270px;
 	border: 1px solid #aaa;
