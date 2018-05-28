@@ -37,12 +37,24 @@ textarea {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
 }
+button {
+	border: 1px solid #948f8b;;
+	border-radius: 8px;
+	width: 50px; height: 25px;
+	color: #948f8b;;
+	font-size: 13px;
+	margin-right: 70px;
+}
+button:hover { cursor: pointer; }
+button:focus { outline: none; }
+button:active { background-color: rgba(0,50,200,0.1) }
 </style>
 </head>
 <body>
 <br><br>
 <div id="outer">
 	<div id="titleDiv">
+		<br><br>
 		<span id="titleSpan">리코타 치즈 샐러드</span>
 		<span id="writer">hrin</span>
 	</div>
@@ -74,7 +86,7 @@ textarea {
 			<span>2018.05.28 16:24</span>
 			<br><br><hr><br>
 		</div>
-		<div>
+		<div><br>
 			<h5>댓글쓰기</h5>
 			<textarea></textarea>
 			<button>등록</button>

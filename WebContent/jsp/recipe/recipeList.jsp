@@ -40,11 +40,12 @@ input#search-bar:focus::-webkit-input-placeholder {
   right: -220px;
 }
 .content-box {
-	width: 300px; height: 360px;
-    margin: 30px;
+	width: 25%; height: 360px;
+    margin: 30px 30px;
 	border: 1px solid #aaa;
-	float: left;
+	display: inline-block;
 }
+.content-box:hover { border: 1px solid #000; }
 .imgDiv {
 	width: 100%; height: 270px;
 	border: 1px solid #aaa;
@@ -63,6 +64,17 @@ h4 { margin: 10px; }
 #pageing { text-align: center;}
 #title { font-size: 25px; }
 #clear { clear :both; }
+button {
+	border: 1px solid #948f8b;;
+	border-radius: 8px;
+	width: 50px; height: 25px;
+	color: #948f8b;;
+	font-size: 13px;
+	margin-right: 70px;
+}
+button:hover { cursor: pointer; }
+button:focus { outline: none; }
+button:active { background-color: rgba(0,50,200,0.1) }
 </style>
 </head>
 <body>
@@ -79,47 +91,51 @@ h4 { margin: 10px; }
 <div id="outer">
 	<div class="content-box">
 		<div class="imgDiv">
-		  <img src="/bitdaily/images/salad.jpg" class="img"/>
+		  <a href="/bitdaily/jsp/recipe/recipeDetail.jsp"><img src="/bitdaily/images/salad.jpg" class="img"/></a>
 		</div>
 		 <h4>제목[4]</h4>
 		 글쓴이 hrin 조회수 10
 	</div>
 	<div class="content-box">
 		<div class="imgDiv">
-		  <img src="/bitdaily/images/banana.jpg" class="img"/>
+		  <a href="/bitdaily/jsp/recipe/recipeDetail.jsp"><img src="/bitdaily/images/banana.jpg" class="img"/></a>
 		</div>
 		 <h4>제목[4]</h4>
 		 글쓴이 hrin 조회수 10
 	</div>
 	<div class="content-box">
 		<div class="imgDiv">
-		  <img src="/bitdaily/images/yogurt.jpg" class="img"/>
-		</div>
-		 <h4>제목[4]</h4>
-		 글쓴이 hrin 조회수 10
-	</div>
-	<div class="content-box">
-		<div class="imgDiv">
-		  <img src="/bitdaily/images/vegetables.jpg" class="img"/>
-		</div>
-		 <h4>제목[4]</h4>
-		 글쓴이 hrin 조회수 10
-	</div>
-	<div class="content-box">
-		<div class="imgDiv">
-		  <img src="/bitdaily/images/salad.jpg" class="img"/>
-		</div>
-		 <h4>제목[4]</h4>
-		 글쓴이 hrin 조회수 10
-	</div>
-	<div class="content-box">
-		<div class="imgDiv">
-		  <img src="/bitdaily/images/salad.jpg" class="img"/>
+		  <a href="/bitdaily/jsp/recipe/recipeDetail.jsp"><img src="/bitdaily/images/yogurt.jpg" class="img"/></a>
 		</div>
 		 <h4>제목[4]</h4>
 		 글쓴이 hrin 조회수 10
 	</div>
 	<div id="clear"></div>
+	<div class="content-box">
+		<div class="imgDiv">
+		  <a href="/bitdaily/jsp/recipe/recipeDetail.jsp"><img src="/bitdaily/images/vegetables.jpg" class="img"/></a>
+		</div>
+		 <h4>제목[4]</h4>
+		 글쓴이 hrin 조회수 10
+	</div>
+	<div class="content-box">
+		<div class="imgDiv">
+		  <a href="/bitdaily/jsp/recipe/recipeDetail.jsp"><img src="/bitdaily/images/salad.jpg" class="img"/></a>
+		</div>
+		 <h4>제목[4]</h4>
+		 글쓴이 hrin 조회수 10
+	</div>
+	<div class="content-box">
+		<div class="imgDiv">
+		  <a href="/bitdaily/jsp/recipe/recipeDetail.jsp"><img src="/bitdaily/images/salad.jpg" class="img"/></a>
+		</div>
+		 <h4>제목[4]</h4>
+		 글쓴이 hrin 조회수 10
+	</div>
+	<div id="clear"></div>
+</div>
+<div id="write" style="text-align: right;">
+	<button onclick = "location.href='/bitdaily/jsp/recipe/recipeWriteForm.jsp'">글쓰기</button>
 </div>
 <br>
 <div id="pageing">[1][2][3][4][5]</div>
