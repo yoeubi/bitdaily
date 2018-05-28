@@ -9,77 +9,136 @@
 	#outer { 
 		width: 90%;
 		margin: 0 auto;
-		outline : 1px solid black; 
+		height : 700px;
 	}
 	
 	#calorie, #workout , #weight {
 		width : 30%;
-		margin : 100px 18px;
-		outline : 1px solid black;
+		margin : 30px 18px;
 		height : 400px;
-		
-	}
-	#outer > div {
 		float: left;
 	}
-	
+
 	#clear {
-		clear :both;
+		clear:both;
+	}
+	div.line {
+		margin : 10px 0;
+		height: 80px;
+		background: #A8E6CF;
+		border-radius: 10px;
 	}
 	
-	#out > tr  {
-		outline : 1px solid black;
-		margin-bottom: 10px;
+
+	div.line:hover {
+		background: #DCEDC1;
+	}
+	div.line > p ,div.line > p ,div.line > p {
+		float: left;
+		text-align: center;
+		line-height: 80px;
+		margin : 0;
+	}
+	p.ranking {
+		width: 100px;
+		height: 80px;
+	}
+	p.name {
+		height : 80px;
+		width: 200px;
+	}
+	h4 {
+		margin: 50px auto;
+		text-align: center;
+	}
+	#date {
+		width : 100%;
+		margin : 0 370px;
+		font-size: 1.5em;
 	}
 </style>
 </head>
 <body>
 <br><br>
 <div id="outer">
+	<div id="date">
+		<a href="#"><img src="/bitdaily/images/icon/before.png" width="30px" height="30px"></a>
+		<span>2018-05-21 ~ 2018-05-27</span>
+		<a href="#"><img src="/bitdaily/images/icon/next.png" width="30px" height="30px"></a>
+	</div>
 	<div id="calorie">
-		<table>
-			<tr>
-				<td>1</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td></td>
-			</tr>
-		
-		</table>
+		<h4>주간 칼로리</h4>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div id="clear"></div>
 	</div>
 	
 	<div id="workout">
-		<ol>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ol>
+		<h4>주간 운동</h4>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div id="clear"></div>
 	</div>
 	
 	<div id="weight">
-		<ol>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ol>
+		<h4>주간 몸무게</h4>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div class="line">
+			<p class="ranking">1</p>
+			<p class="name">2</p>
+		</div>
+		<div id="clear"></div>
 	</div>
 	<div id="clear"></div>
 </div>
