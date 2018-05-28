@@ -61,10 +61,7 @@ input#search-bar:focus::-webkit-input-placeholder {
 h4 { margin: 10px; }
 #pageing { text-align: center;}
 #title { font-size: 25px; }
-
-#clear {
-	clear :both;
-}
+#clear { clear :both; }
 </style>
 </head>
 <body>
@@ -121,8 +118,9 @@ h4 { margin: 10px; }
 		 <h4>제목[4]</h4>
 		 글쓴이 hrin 조회수 10
 	</div>
+	<div id="clear"></div>
 </div>
-<br><br>
+<br>
 <div id="pageing">[1][2][3][4][5]</div>
 <br>
 
