@@ -7,6 +7,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <link href="${pageContext.request.contextPath}/css/common/commondiary.css" rel="stylesheet">
 <style>
 .search-container {
@@ -75,16 +77,16 @@ button:active { background-color: rgba(0,50,200,0.1) }
 <a href="#"><img src="/bitdaily/images/icon/before.png" width="30px" height="30px"></a>
 <fmt:formatDate value="${today}" pattern="yyyy-MM-dd" />
 <a href="#"><img src="/bitdaily/images/icon/next.png" width="30px" height="30px"></a>
-<div class="calorie">목표칼로리 : kcal</div>
+<div class="calorie">목표칼로리 <img src="/bitdaily/images/icon/fork.png" width="35px" height="35px"> 1200 kcal</div>
 </div><!-- end .date -->
 
 
 <div class="diary">
 	<div class="subMenu">
 	<ul>
-	<li><a href="#">식단</a></li>
+	<li><a href="/bitdaily/jsp/diary/fooddiary.jsp">식단</a></li>
 	<li><a href="#" class="sub_active">운동</a></li>
-	<li><a href="#">일기</a></li>
+	<li><a href="/bitdaily/jsp/diary/dailydiary.jsp">일기</a></li>
 	</ul>
 	</div>
 	
@@ -135,10 +137,53 @@ button:active { background-color: rgba(0,50,200,0.1) }
 	      </table>
 	    </div>
 	</div>
-
 </div><!-- end .diary -->
 
-<div class="dailyStatistics">통계영역</div>
+<!-- 일일 통계 -->
+<div class="dailyStatistics">
+	<p>daily Statistics</p>
+	<div class="writeStatis">
+		<p>하루 권장 소모 칼로리 : 0000kal</p>
+		<p>하루 소모한 칼로리 : 0000kal</p>
+		<p>하루 섭취 칼로리: 0000kal</p>
+		<p>소모해야 할 칼로리? : 0000kal</p>
+	</div><br>
+	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
+</div>
+
+<script>
+// 	일일통계 pie차트
+var img = new Image();
+img.src = 'https://example.com/my_image.png';
+
+	var ctx = document.getElementById("pieCanvas").getContext('2d');
+	var fillPattern = ctx.createPattern(img, 'repeat');
+	var data = {
+		    datasets: [{
+		        data: [10, 20, 30],
+			    backgroundColor: [
+			    	 'rgba(225, 000, 102)',
+		             'rgba(255, 255, 102)',
+		             'rgba(000, 153, 255)',
+			    	]
+		    }],
+		    // These labels appear in the legend and in the tooltips when hovering different arcs
+		    labels: [
+		        'Red',
+		        'Yellow',
+		        'Blue'
+		    ]
+		};
+	var options = {
+			
+	};
+	var myPieChart = new Chart(ctx,{
+	    type: 'pie',
+	    data: data,
+	    options: options
+	});
+	//일일 통계 여기까지
+</script>
 
 </body>
 </html>

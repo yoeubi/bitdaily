@@ -225,8 +225,8 @@ color : black;
 	<div class="subMenu">
 	<ul>
 	<li><a href="#" class="sub_active">식단</a></li>
-	<li><a href="#">운동</a></li>
-	<li><a href="#">일기</a></li>
+	<li><a href="/bitdaily/jsp/diary/exercisediary.jsp">운동</a></li>
+	<li><a href="/bitdaily/jsp/diary/dailydiary.jsp">일기</a></li>
 	</ul>
 	</div>
 	

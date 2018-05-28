@@ -11,7 +11,7 @@
     <link href="${pageContext.request.contextPath}/css/full-slider.css" rel="stylesheet">
     <style>
     .carousel-item{ 
-       height: 540px;  
+       height: 610px;  
       }  
     .content {
        width: 100%;
