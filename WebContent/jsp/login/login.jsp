@@ -4,6 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="sweetalert2.css" />
+<script src="../../sweetalert/jquery-3.2.1.js"></script>
+<script src="sweetalert2.all.min.js"></script>
 <style>
 	* {margin: 0px; padding: 0px;}
 	.vid { width: 100%; height: 100%; position:fixed; left: 0px; opacity: 1; }
@@ -17,7 +20,9 @@ body {
   font-size: 14px;
   background: #f2f2f2;
 }
-h2 { font-weight: bolder;}
+h2 { font-weight: bolder;
+	color: white;
+}
 
 .clearfix:after {
   content: "";
@@ -28,6 +33,7 @@ h2 { font-weight: bolder;}
 }
 
 .form_wrapper {
+  border-radius: 10px;
   background: rgba(225,225,225,0.1);
   width: 550px;
   max-width: 100%;
@@ -107,6 +113,7 @@ h2 { font-weight: bolder;}
   border: 1px solid #f5ba1a;
 }
 .form_wrapper input[type="ID"] {
+border-radius: 5px;
   width: 100%;
   padding: 8px 10px 9px 35px;
   height: 35px;
@@ -125,6 +132,7 @@ h2 { font-weight: bolder;}
   border: 1px solid #f5ba1a;
 }
 .form_wrapper input[type="password"] {
+  border-radius: 5px;
   width: 100%;
   padding: 8px 10px 9px 35px;
   height: 35px;
@@ -143,6 +151,7 @@ h2 { font-weight: bolder;}
   border: 1px solid #f5ba1a;
 }
 .form_wrapper input[type="submit"] {
+  border-radius: 5px;
   background: #BCA9F5;
   height: 35px;
   line-height: 35px;
@@ -157,7 +166,7 @@ h2 { font-weight: bolder;}
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
-   box-shadow: 2px 2px 2px #111;
+   box-shadow: 2px 2px 2px #F2F2F2;
    opacity: 0.9;
 }
 .form_wrapper input[type="submit"]:hover {
@@ -202,28 +211,33 @@ h2 { font-weight: bolder;}
   width: 35px;
 }
 .social_btn.fb {
- opacity: 0.9;
+  border-radius: 5px;
+  opacity: 0.9;
   background: #5EC75E;
-  box-shadow: 2px 2px 2px #111;
+  box-shadow: 2px 2px 2px #F2F2F2;
 }
 .social_btn.fb span {
+  border-radius: 5px;
   background: #3CA03C;
-  box-shadow: 2px 2px 2px #111;
+  box-shadow: 2px 2px 2px #F2F2F2;
 }
 .social_btn.tw {
- opacity: 0.9;
+  border-radius: 5px;
+  opacity: 0.9;
   background: #FFD228;
-  box-shadow: 2px 2px 2px #111;
+  box-shadow: 2px 2px 2px #F2F2F2;
 }
 .social_btn.tw span {
+  border-radius: 5px;
   background: #FFC81E;
-  box-shadow: 2px 2px 2px #111;
+  box-shadow: 2px 2px 2px #F2F2F2;
 }
 
 .create_account a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
 /*    box-shadow: 2px 2px 2px #111; */
   
 }
@@ -268,6 +282,8 @@ h2 { font-weight: bolder;}
     padding-bottom: 20px;
   }
   
+input[type="submit"]:hover
+  
 }
 
 	
@@ -306,13 +322,68 @@ h2 { font-weight: bolder;}
           </div>
           <input class="button" type="submit" value="Sign in"/>
           <div class="row clearfix bottom_row">
-            <div class="col_half forgot_pw"><a href="#">Forgot Password?</a></div>
-            <div class="col_half forgot_pw"><a href="#">Forgot ID?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+            <div class="col_half searchPass"><input class="searchPass" id="searchPass" value="Forgot Password?" type="submit" ></div>
+            <div class="col_half searchPass"><input class="searchId" id="searchId" value="Forgot ID?" type="submit" ></div>
           </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+	<script>
+	//비번찾기
+		$("#searchPass").click(function () {
+			swal.mixin({
+			  input: 'text',
+			  confirmButtonText: 'Next &rarr;',
+			  showCancelButton: true,
+			  progressSteps: ['1', '2', '3']
+			}).queue([
+			  {
+			    title: 'ID를 입력하세요',
+			    text: '...'
+			  },
+			  '이메일을 입력하세요',
+			]).then((result) => {
+			  if (result.value) {
+			    swal({
+			      title: '비밀번호는..',
+			      html:
+			        '비밀번호 수정 권장: <pre>' +
+			          JSON.stringify(result.value) +
+			        '</pre>',
+			      confirmButtonText: '성공!'
+			    })
+			  }
+			})
+		});
+		
+		//ID 찾기
+		$("#searchId").click(function () {
+			swal.mixin({
+			  input: 'text',
+			  confirmButtonText: 'Next &rarr;',
+			  showCancelButton: true,
+			  progressSteps: ['1', '2', '3']
+			}).queue([
+			  {
+			    title: '이름을 입력하세요',
+			    text: '...'
+			  },
+			  '이메일을 입력하세요',
+			]).then((result) => {
+			  if (result.value) {
+			    swal({
+			      title: 'ID는..',
+			      html:
+			        ':D: <pre>' +
+			          JSON.stringify(result.value) +
+			        '</pre>',
+			      confirmButtonText: '성공!'
+			    })
+			  }
+			})
+		});
+	</script>
 </body>
 </html>

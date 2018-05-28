@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
 <style>
  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
  * { 
@@ -104,8 +103,6 @@ input.check {
 	border-radius: 5px;
 	width: 80%;
 	}
-
-
 </style>
 </head>
 <body>
@@ -114,7 +111,6 @@ input.check {
 		<hgroup>
 			<h1>Sign up for your Account</h1>
 		</hgroup>
-
 		<p class="input">ID</p>
 		<input class="place" type="text">
 		<a id="idcheck" href="javascript:void(0);">중복확인</a>		
@@ -132,20 +128,20 @@ input.check {
         <label for="under_13" class="light">Female</label>
         <input type="radio" id="over_13" value="over_13" name="user_age">
         <label for="over_13" class="light">Male</label>
-		<p class="input">Birth</p>
+		<p class="input">Age</p>
 	    <div class="input-group">
-	         <div class="col-third"><input class="birth" type="text" placeholder="DD"/></div>
-			 <div class="col-third"><input class="birth" type="text" placeholder="MM"/></div>
-	         <div class="col-third"><input class="birth" type="text" placeholder="YYYY"/></div>
+	      <input class="place" type="text">
         </div>
 		<p class="input">키(cm)</p>
 		<input class="place" type="text">
-		<p class="input">몸무게(gm)</p>
+		<p class="input">현재 몸무게(gm)</p>
+		<input class="place" type="text">	
+		<p class="input">목표 몸무게(gm)</p>
 		<input class="place" type="text">				
 		<footer>
 			<input class="btn" type="submit" value="Sign Up">
 		</footer>
 	</div>
-	</div>
+</div>
 </body>
 </html>

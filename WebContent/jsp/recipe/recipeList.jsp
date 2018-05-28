@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <style>
+body { background-color: #e2dedb; }
 .search-container {
   width: 100%;
   display: inline;
@@ -40,7 +41,7 @@ input#search-bar:focus::-webkit-input-placeholder {
 }
 .content-box {
 	width: 300px; height: 360px;
-    margin: 30px 40px;
+    margin: 30px;
 	border: 1px solid #aaa;
 	float: left;
 }
