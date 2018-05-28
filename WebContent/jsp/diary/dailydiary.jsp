@@ -36,7 +36,6 @@
 	
 	<div class="mainMenu">
 		<div id="todaydiary"><img src="/bitdaily/images/111061-200.png"><span>오늘의 일기</span></div>
-		<div id="desc"><span>오늘의 반성 일기(30자) 내외</span></div>
 		<div id="content">
 			<div id="titleregist"><input type="text" name="title" id="title" value="제목을 입력하세요"><button>등록</button> </div>
 			<form id="note">
