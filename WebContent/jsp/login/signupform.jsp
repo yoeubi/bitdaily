@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
- @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+/*  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600"); */
  * { 
  	box-sizing: border-box; 
  	outline: none; 
@@ -18,7 +18,7 @@ html {
 	color: #6b7b8a;
 }
 .signup-box {
-	height: 890px;
+	height: 800px;
 	width: 75%;
 	padding: 50px;
 	background-color: #fff;
@@ -38,6 +38,9 @@ p.input{
 /*  	padding-bottom: 10px;  */
 	text-transform: uppercase;
 }
+span.input1{
+	font-size: 21px;
+}
 input.place  {
 /* 	padding-top:20px; */
 	height: 35px;
@@ -50,6 +53,19 @@ input.place  {
 	color: #6b7b8a;
 	background-color: #fbfbfb;
 }
+input.place1  {
+/* 	padding-top:20px; */
+	height: 35px;
+	width: 10%;
+	padding-left: 25px;
+	border: solid #c6e2e6 2px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #6b7b8a;
+	background-color: #fbfbfb;
+}
+
 input.place:focus {
 	background-color: #edf8f7;
 }
@@ -78,12 +94,12 @@ a {
 	font-size: 20px;
 	font-style: bold;
 	text-transform: uppercase;
-	margin-left: 160px;
+	margin-left: 10%;
 }
  footer { 
  	display: block; 
  	margin-top: 30px; 
- 	margin-left: 30%; 
+ 	margin-left: 10%; 
  } 
 input.check {
 	width: 20px;
@@ -121,23 +137,21 @@ input.check {
 		<a id="idcheck" href="javascript:void(0);">중복확인</a>
 		<p class="input">Password</p>
 		<input class="place" type="password">
-		<p class="input">Confirm password</p>
-		<input class="place" type="password">
-		<p class="input">Gender</p>
+ 		<p class="input">Confirm password</p> 
+ 		<input class="place" type="password">
+		<p class="input">Age</p>
+	    <div class="input-group"><input class="place" type="text"></div>
+		<span class="input1">Gender&nbsp;&nbsp;</span>
         <input type="radio" id="under_13" value="under_13" name="user_age">
         <label for="under_13" class="light">Female</label>
         <input type="radio" id="over_13" value="over_13" name="user_age">
-        <label for="over_13" class="light">Male</label>
-		<p class="input">Age</p>
-	    <div class="input-group">
-	      <input class="place" type="text">
-        </div>
-		<p class="input">키(cm)</p>
-		<input class="place" type="text">
-		<p class="input">현재 몸무게(gm)</p>
-		<input class="place" type="text">	
-		<p class="input">목표 몸무게(gm)</p>
-		<input class="place" type="text">				
+        <label for="over_13" class="light">Male</label><br><br>
+		<span class="input1">키(cm)</span>
+		<input class="place1" type="text">
+		<span class="input1">&nbsp;&nbsp;현재 몸무게(kg)</span>
+		<input class="place1" type="text">	
+		<span class="input1">&nbsp;&nbsp;목표 몸무게(kg)</span>
+		<input class="place1" type="text">				
 		<footer>
 			<input class="btn" type="submit" value="Sign Up">
 		</footer>
