@@ -49,7 +49,7 @@
 
 <!-- 일일 통계 -->
 <div class="dailyStatistics">
-	<p>daily Statistics</p>
+	<p>Daily Statistics</p>
 	<div class="writeStatis">
 		<p>하루 권장 소모 칼로리 : 0000kal</p>
 		<p>하루 소모한 칼로리 : 0000kal</p>

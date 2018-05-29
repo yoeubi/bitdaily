@@ -62,7 +62,7 @@ font-size: medium;
 	padding: 30px;
 	display: inline-block; 
 	width: 28%;
-	height: 850px;
+	height: 700px;
 	border: 1px dotted #aaa;
 	border-radius: 20px;
 	float: right;
@@ -89,4 +89,6 @@ font-size: medium;
 	margin-left: 10%;
 	font-weight: bold;
 	color: black;
+	margin-top: 0 !important;
+    margin-bottom: 1rem !important;
 }
