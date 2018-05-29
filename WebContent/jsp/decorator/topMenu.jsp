@@ -10,18 +10,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item" id="nav-diary">
               <a class="nav-link" href="/bitdaily/jsp/diary/fooddiary.jsp">다이어리
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-report">
               <a class="nav-link" href="/bitdaily/jsp/stat/report.jsp">리포트</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-weight">
               <a class="nav-link" href="/bitdaily/jsp/stat/weightrecord.jsp">체중기록</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-recipe">
               <a class="nav-link" href="/bitdaily/jsp/recipe/recipeList.jsp">레시피</a>
             </li>
             <li class="nav-item">

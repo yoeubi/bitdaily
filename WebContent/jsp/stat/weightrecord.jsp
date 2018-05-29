@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,6 +17,7 @@ margin: 5px;
 width : 70%;
 height: auto;
 }
+
 #side{
 text-align: center;
 padding: 25px;
@@ -25,7 +29,7 @@ float: right;
 width: 28%;
 height: 618px;
 border: 1px solid #aaa;
-	border-radius: 20px;
+border-radius: 20px;
 }
 #scale {
 text-align: center;
@@ -33,18 +37,17 @@ margin: 15px auto;
 width: 98%;
 height: 300px;
 border: 1px solid #aaa;
-	border-radius: 20px;
-	padding: 13px;
+border-radius: 20px;
 }
 #weight_statistics {
 margin: 15px auto;
 width: 98%;
 height: 300px;
 border: 1px solid #aaa;
-	border-radius: 20px;
+border-radius: 20px;
 }
 .graphBox {
-margin : 20px 70px;
+margin : 20px 120px;
 }
 #weight {
 text-decoration: none;
@@ -60,15 +63,24 @@ color : black;
 .buts:hover { cursor: pointer; }
 .buts:focus { outline: none; }
 .buts:active { background-color: rgba(0,50,200,0.1) }
+#weightToday {
+border:0.5px solid #aaa;
+width: 100px;
+}
 </style>
 </head>
 <body>
+
+<script>
+$("#nav-weight").addClass("active");
+</script>
+
 <div class="content_box">
 <div id="scale">
 <img src="/bitdaily/images/icon/thescale.png" width="100px" height="100px"><br>
-<h3>49kg</h3><br>
+<h3>45kg</h3><br>　50%<br>
 <img src="/bitdaily/images/icon/runner.png" width="50px" height="50px"><br>
-시작__________________________________________목표
+50kg__________________________________________40kg
 </div>
 <div id="weight_statistics">
 <div class="graphBox">
@@ -99,7 +111,7 @@ color : black;
 </div>
 <script type="text/javascript">
 $("#weight").click(function () {
-	$(".but").html("<input type='text' name='weightToday' style='border:0.5px solid #aaa'>　<button class='buts'>등록</button>");
+	$(".but").html("<input type='text' name='weightToday' id='weightToday'>　<button class='buts'>등록</button>");
 });
 </script>
 <script type="text/javascript">

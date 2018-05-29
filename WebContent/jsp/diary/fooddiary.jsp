@@ -118,7 +118,9 @@ color : black;
 
 </head>
 <body>
-
+<script>
+$("#nav-diary").addClass("active");
+</script>
 <c:set var="today" value="<%=new java.util.Date()%>" />
 <div class="date">
 <a href="#"><img src="/bitdaily/images/icon/before.png" width="30px" height="30px"></a>
