@@ -24,6 +24,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/bitdaily/jsp/recipe/recipeList.jsp">레시피</a>
             </li>
+            <li class="nav-item">
+              <a href="/bitdaily/jsp/login/userinfo.jsp" style="text-decoration: none">　<img src="/bitdaily/images/icon/user.png" width="35px" height="35px"></a>
+            </li>
           </ul>
         </div>
       </div>
