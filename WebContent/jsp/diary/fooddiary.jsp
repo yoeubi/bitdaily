@@ -11,54 +11,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <link href="${pageContext.request.contextPath}/css/common/commondiary.css" rel="stylesheet">
 <style>
-.diary {
-display: inline-block;
-margin: 5px;
-width : 100%;
-height: auto;
-}
-.date {
-font-size: x-large;
-width: 100%;
-margin: 5px;
-text-align: center;
-}
-.calorie {
-font-size: medium;
-}
-.subMenu > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #c3e7fa;
-}
-
-.subMenu > ul > li {
-    float: left;
-    width: 33.33333%;
-    border: 1px solid white;
-}
-
-.subMenu > ul > li a {
-    display: block;
-    color: white;
-    font-weight: bold; 
-    font-size: large;
-     text-shadow: 0.5px 0.5px 0.5px #c6d5f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.subMenu >  ul > li a:hover {
-    background-color: #27aae1;
-}
-
-.sub_active {
-    background-color: #27aae1;
-}
 .food_record {
 	width: 90%;
 }
@@ -163,6 +115,7 @@ color : black;
 
 
 </style>
+
 </head>
 <body>
 
@@ -175,19 +128,8 @@ color : black;
 </div><!-- end .date -->
 
 
-<!-- 일일 통계 -->
 <div class="diary">
-	<div class="dailyStatistics">
-	<p>Daily Statistics</p>
-	<div class="writeStatis">
-		<p>하루 권장 소모 칼로리 : 0000kal</p>
-		<p>하루 소모한 칼로리 : 0000kal</p>
-		<p>하루 섭취 칼로리: 0000kal</p>
-		<p>소모해야 할 칼로리? : 0000kal</p>
-	</div><br>
-	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
-	</div>
-	<!-- 일일 통계  까지-->
+
 	<div class="subMenu">
 	<ul>
 	<li><a href="#" class="sub_active">식단</a></li>
@@ -196,6 +138,7 @@ color : black;
 	</ul>
 	</div>
 	
+		<div class="mainMenu">
 	<div id="morning">
 	<div class="icon">아침</div>
 	<div>
@@ -230,9 +173,8 @@ color : black;
 	<img class="result_img" src="/bitdaily/images/yogurt.jpg" width="182px" height="182px">
 	</div>
 	<div class="result_content">
-	<strong>잡곡밥</strong><br>
+	<strong>요거트</strong><br>
 	100kcal<br>
-	[탄60/단30/지10]
 	</div>
 	</div>
 	
@@ -241,9 +183,8 @@ color : black;
 	<img  class="result_img"  src="/bitdaily/images/yogurt.jpg" width="182px" height="182px">
 	</div>
 	<div class="result_content">
-	<strong>잡곡밥</strong><br>
+	<strong>요거트</strong><br>
 	100kcal<br>
-	[탄60/단30/지10]
 	</div>
 	</div>
 	
@@ -252,15 +193,15 @@ color : black;
 	<img  class="result_img"  src="/bitdaily/images/yogurt.jpg" width="182px" height="182px">
 	</div>
 	<div class="result_content">
-	<strong>잡곡밥</strong><br>
+	<strong>요거트</strong><br>
 	100kcal<br>
-	[탄60/단30/지10]
 	</div>
 	</div>
 	
 	</div> <!-- end .result -->
 	
 	<div class="add">　　 <a href="#" class="foodAdd"><img src="/bitdaily/images/icon/plus.png" width="20px" height="20px">　음식 추가</a></div>
+	</div>
 	</div>
 	</div>
 
@@ -289,52 +230,39 @@ color : black;
 		search += "<input type='checkbox' name='rice3' id='rice3' value='3' /><lable for='rice3'> 잡곡밥</lable>";
 		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
 		search += "<div id='buttons'>";
-		search += "<button class='buts'>취소</button>　<button class='buts'>등록</button>";
+		search += "<button type='button' class='buts cancle'>취소</button>　<button type='button' class='buts'>등록</button>";
 		search += "</div></div>";
 		result.html(search);
 	}
 	
-	function makeList() {
+	$(".cancle").on("click", function () {
+	
+	//음식추가 버튼 만드는 함수...
+// 		makeAddButton();
+	});
+ 
+// 	function makeList() {
 		
-	}
-	
-	
-	
-	var img = new Image();
-	img.src = 'https://example.com/my_image.png';
+// 	}
 
-		var ctx = document.getElementById("pieCanvas").getContext('2d');
-		var fillPattern = ctx.createPattern(img, 'repeat');
-		var data = {
-			    datasets: [{
-			        data: [10, 20, 30, 10],
-				    backgroundColor: [
-				    	 'rgba(255, 99, 132)',
-			             'rgba(255, 159, 64)',
-			             'rgba(54, 162, 235)',
-			             'rgba(255, 205, 86)'
-				    ]
-			    }],
-			    // These labels appear in the legend and in the tooltips when hovering different arcs
-			    labels: [
-			        '아침',
-			        '점심',
-			        '저녁',
-			        '간식'
-			    ]
-			};
-		var options = {
-				
-		};
-		var myPieChart = new Chart(ctx,{
-		    type: 'doughnut',
-		    data: data,
-		    options: options
-		});
-	
+// 	function makeAddButton() {
+		
+// 	}
 </script>
-<!-- <script src="/bitdaily/WebContent/jsp/stat/mini.js"></script> -->
 
+<!-- 일일 통계 -->
+<div class="dailyStatistics">
+	<p>Daily Statistics</p>
+	<div class="writeStatis">
+		<p>하루 권장 소모 칼로리 : 0000kal</p>
+		<p>하루 소모한 칼로리 : 0000kal</p>
+		<p>하루 섭취 칼로리: 0000kal</p>
+		<p>소모해야 할 칼로리? : 0000kal</p>
+	</div><br>
+	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
+</div>
+<script src="/bitdaily/jsp/stat/mini.js"></script>
+	<!-- 일일 통계  까지-->
 
 
   <!-- Modal -->
