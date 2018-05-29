@@ -8,7 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <link href="${pageContext.request.contextPath}/css/common/recipeWriteForm.css" rel="stylesheet">
 <style>
-* { color: #948f8b; }
+* { color: #666; }
 .imgDiv {
 	width: 100%; height: 270px;
 	border: 1px solid #aaa;
@@ -63,8 +63,8 @@ button:active { background-color: rgba(0,50,200,0.1) }
 		<span id="regDate">2018.05.28</span>
 	</div>
 	<div id="content">
-		<br><br>
-		<img src="/bitdaily/images/vegetables.jpg"><br><br>
+		<br>
+		<img src="/bitdaily/images/vegetables.jpg" width="500px;"><br><br>
 		1. 야채샐러드의 기본은 물기를 확실히 털어내는 거겠죠. 신선하고 아삭하게 찬물에 담가두었다가 물기를 빼고 방울토마토는 꼭지를 떼어주면 됩니다.<br>
 		2. 리코타치즈도 준비해주세요.<br>
 		3. 접시에 양상추 - 방울토마토 - 블랙 올리브 - 베이비채소를 보기 좋게 담고빵도 같이 곁들여 놓았어요~ 먹기 전에 발사믹 글레이즈를 뿌려 드시면 더 맛있어요~<br>
