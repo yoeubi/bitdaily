@@ -9,22 +9,13 @@
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<link href="${pageContext.request.contextPath}/css/common/commondiary.css" rel="stylesheet">
 <style>
 .diary {
 display: inline-block;
 margin: 5px;
 width : 100%;
 height: auto;
-}
-.dailyStatistics{
-margin: 5px;
-padding: 30px;
-display: inline-block; 
-width: 28%;
-height: 750px;
-border: 1px dotted #aaa;
-border-radius: 20px;
-float: right;
 }
 .date {
 font-size: x-large;
@@ -170,31 +161,6 @@ color : black;
 }
 
 
-/* 옆에 붙는... 일일 통계  css 밑에   .writeStatis > p  까지 */
-.writeStatis{
-	border: 1px solid gray;
-	width: 100%;
-	height: 45%;
-	margin: auto;
-	border-radius: 20px;
-	padding-top: 30px;
-}
-
-.dailyStatistics > p {
-	font-size: 20px;
-	margin-left: 20%;
-	font-weight: bold;
-	color: black;
-	color: #27aae1
-}
-
-.writeStatis > p {
-	font-size: 16px;
-	margin-left: 10%;
-	font-weight: bold;
-	color: black;
-}
-
 
 </style>
 </head>
@@ -332,41 +298,43 @@ color : black;
 		
 	}
 	
-// 	일일통계 pie차트
-var img = new Image();
-img.src = 'https://example.com/my_image.png';
+	
+	
+	var img = new Image();
+	img.src = 'https://example.com/my_image.png';
 
-	var ctx = document.getElementById("pieCanvas").getContext('2d');
-	var fillPattern = ctx.createPattern(img, 'repeat');
-	var data = {
-		    datasets: [{
-		        data: [10, 20, 30, 10],
-			    backgroundColor: [
-			    	 'rgba(225, 000, 102)',
-		             'rgba(255, 255, 102)',
-		             'rgba(000, 153, 255)',
-		             'rgba(204, 255, 051)',
-			    	]
-		    }],
-		    // These labels appear in the legend and in the tooltips when hovering different arcs
-		    labels: [
-		        '아침',
-		        '점심',
-		        '저녁',
-		        '간식'
-		    ]
+		var ctx = document.getElementById("pieCanvas").getContext('2d');
+		var fillPattern = ctx.createPattern(img, 'repeat');
+		var data = {
+			    datasets: [{
+			        data: [10, 20, 30, 10],
+				    backgroundColor: [
+				    	 'rgba(255, 99, 132)',
+			             'rgba(255, 159, 64)',
+			             'rgba(54, 162, 235)',
+			             'rgba(255, 205, 86)'
+				    ]
+			    }],
+			    // These labels appear in the legend and in the tooltips when hovering different arcs
+			    labels: [
+			        '아침',
+			        '점심',
+			        '저녁',
+			        '간식'
+			    ]
+			};
+		var options = {
+				
 		};
-	var options = {
-			
-	};
-	var myPieChart = new Chart(ctx,{
-	    type: 'pie',
-	    data: data,
-	    options: options
-	});
-	//일일 통계 여기까지
+		var myPieChart = new Chart(ctx,{
+		    type: 'doughnut',
+		    data: data,
+		    options: options
+		});
 	
 </script>
+<!-- <script src="/bitdaily/WebContent/jsp/stat/mini.js"></script> -->
+
 
 
   <!-- Modal -->

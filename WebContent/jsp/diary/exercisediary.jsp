@@ -151,39 +151,7 @@ button:active { background-color: rgba(0,50,200,0.1) }
 	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
 </div>
 
-<script>
-// 	일일통계 pie차트
-var img = new Image();
-img.src = 'https://example.com/my_image.png';
-
-	var ctx = document.getElementById("pieCanvas").getContext('2d');
-	var fillPattern = ctx.createPattern(img, 'repeat');
-	var data = {
-		    datasets: [{
-		        data: [10, 20, 30],
-			    backgroundColor: [
-			    	 'rgba(225, 000, 102)',
-		             'rgba(255, 255, 102)',
-		             'rgba(000, 153, 255)',
-			    	]
-		    }],
-		    // These labels appear in the legend and in the tooltips when hovering different arcs
-		    labels: [
-		        'Red',
-		        'Yellow',
-		        'Blue'
-		    ]
-		};
-	var options = {
-			
-	};
-	var myPieChart = new Chart(ctx,{
-	    type: 'pie',
-	    data: data,
-	    options: options
-	});
-	//일일 통계 여기까지
-</script>
+<script src="/bitdaily/jsp/stat/mini.js"></script>
 
 </body>
 </html>

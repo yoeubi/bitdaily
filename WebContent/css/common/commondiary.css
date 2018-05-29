@@ -60,12 +60,12 @@ font-size: medium;
 .dailyStatistics{
 	margin: 5px;
 	padding: 30px;
-	 display: inline-block; 
+	display: inline-block; 
 	width: 28%;
-	height: 600px;
+	height: 850px;
 	border: 1px dotted #aaa;
 	border-radius: 20px;
-	float: right;	
+	float: right;
 }
 .writeStatis{
 	border: 1px solid gray;
