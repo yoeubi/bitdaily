@@ -42,10 +42,12 @@
 	p.ranking {
 		width: 100px;
 		height: 80px;
+		font-size: 1.5em;
 	}
 	p.name {
 		height : 80px;
 		width: 200px;
+		font-size: 1.5em;
 	}
 	h4 {
 		margin: 50px auto;
@@ -70,23 +72,23 @@
 		<h4>주간 칼로리</h4>
 		<div class="line">
 			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">2</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">3</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">4</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">5</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div id="clear"></div>
 	</div>
@@ -95,23 +97,23 @@
 		<h4>주간 운동</h4>
 		<div class="line">
 			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">2</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">3</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">4</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">5</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div id="clear"></div>
 	</div>
@@ -120,23 +122,23 @@
 		<h4>주간 몸무게</h4>
 		<div class="line">
 			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">2</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">3</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">4</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div class="line">
-			<p class="ranking">1</p>
-			<p class="name">2</p>
+			<p class="ranking">5</p>
+			<p class="name">홍길동</p>
 		</div>
 		<div id="clear"></div>
 	</div>
