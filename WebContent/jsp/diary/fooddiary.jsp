@@ -19,9 +19,9 @@ height: auto;
 .dailyStatistics{
 margin: 5px;
 padding: 30px;
- display: inline-block; 
+display: inline-block; 
 width: 28%;
-height: 600px;
+height: 750px;
 border: 1px dotted #aaa;
 border-radius: 20px;
 float: right;
@@ -340,18 +340,20 @@ img.src = 'https://example.com/my_image.png';
 	var fillPattern = ctx.createPattern(img, 'repeat');
 	var data = {
 		    datasets: [{
-		        data: [10, 20, 30],
+		        data: [10, 20, 30, 10],
 			    backgroundColor: [
 			    	 'rgba(225, 000, 102)',
 		             'rgba(255, 255, 102)',
 		             'rgba(000, 153, 255)',
+		             'rgba(204, 255, 051)',
 			    	]
 		    }],
 		    // These labels appear in the legend and in the tooltips when hovering different arcs
 		    labels: [
-		        'Red',
-		        'Yellow',
-		        'Blue'
+		        '아침',
+		        '점심',
+		        '저녁',
+		        '간식'
 		    ]
 		};
 	var options = {
