@@ -32,6 +32,39 @@ body { color: #948f8b;}
 	overflow: hidden;
 }
 #outer { width: 100%; text-align: center; margin: 0 auto; }
+* { box-sizing: inherit; }
+.file_input label {
+    position:relative;
+    cursor:pointer;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    width:100px;
+    height:30px;
+    background:#b3aca7;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    font-size:12px;
+    margin: 5px;
+}
+.file_input label input {
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+.file_input input[type=text] {
+    vertical-align:middle;
+    display:inline-block;
+    width:200px;
+    height:28px;
+    line-height:28px;
+    font-size:11px;
+    padding:0;
+    border:0;
+    border:1px solid #b3aca7;
+}
 </style>
 </head>
 <body>
@@ -43,8 +76,14 @@ body { color: #948f8b;}
 	<div class="content-box">
 		<header>DIET RECIPE</header>
 		<form id="form" class="topBefore">
+			<div class="file_input">
+			    <label>
+			        File Attach
+			        <input type="file" onchange="javascript:document.getElementById('file_route').value=this.value">
+			    </label>
+			    <input type="text" readonly="readonly" title="File Route" id="file_route">
+			</div>
 		  <input id="name" type="text" name="title" placeholder="TITLE">
-		  <input id="email" type="text" placeholder="E-MAIL">
 		  <textarea id="message" type="text" name="content" placeholder="CONTENT"></textarea>
 	      <input id="submit" type="submit" value="REGISTER">
 	    </form>
