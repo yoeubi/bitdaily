@@ -37,7 +37,7 @@
 	<div class="mainMenu">
 		<div id="todaydiary"><img src="/bitdaily/images/111061-200.png"><span>오늘의 일기</span></div>
 		<div id="content">
-			<div id="titleregist"><input type="text" name="title" id="title" value="제목을 입력하세요"><button>등록</button> </div>
+			<div id="titleregist"><input type="text" name="title" id="title" value="제목을 입력하세요"></div>
 			<form id="note">
 				<div id="summernote"></div>
 			</form>
@@ -71,10 +71,10 @@
    		    ['height', ['height']]
    		],
         placeholder: '일기를 입력하세요',
-        height: 400,
-        minHeight: 400,
-        maxHeight: 400, 
-        width : 725
+        height: 300,
+        minHeight: 300,
+        maxHeight: 300, 
+        width : 810
       });
 </script>
 <script src="/bitdaily/jsp/stat/mini.js"></script>

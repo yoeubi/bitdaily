@@ -8,8 +8,8 @@
 }
 
 #todaydiary , #noteregist , #titleregist, #note {
-	margin-top : 20px;
-	margin-left: 20px;
+	margin-top : 40px;
+	margin-left: 30px;
 }
 
 #desc {
@@ -17,20 +17,27 @@
 	font-size: 0.8em;
 }	
 #noteregist > button , #titleregist > button {
-	background: white;
-	color:black;
-	border-radius: 30px;
-	padding-left: 5px;
-	padding-right: 5px;
+	border: 1px solid #00AFFF;
+	border-radius: 8px;
+	width: 50px; height: 25px;
+	color: #00AFFF;
+	font-size: 13px;
 }
 
 
 #noteregist > button:hover , #titleregist > button:hover {
-	background-color: black;
-	color: white;
+	background-color: rgba(0,50,200,0.1);
+	
+}
+#noteregist > button:focus , #titleregist > button:focus {
+	outline: none;
 }
 
 #todaydiary > img {
-	width: 3%;
+	width: 5%;
 	margin-right: 5px;
+}
+
+#todaydiary > span {
+	font-size: 25px;
 }
