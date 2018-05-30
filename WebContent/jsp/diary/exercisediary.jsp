@@ -59,15 +59,15 @@ tr,td { padding: 0px 5px; }
 span { font-weight: bold; font-size: 20px; }
 .footMenu { width: 100%; position:absolute; bottom:0px; padding: 25px; }
 button {
-	border: 1px solid #00AFFF;
+	border: 1px solid #062859;
 	border-radius: 8px;
 	width: 50px; height: 25px;
-	color: #00AFFF;
+	color: #062859;
 	font-size: 13px;
 }
 button:hover { cursor: pointer; }
 button:focus { outline: none; }
-button:active { background-color: rgba(0,50,200,0.1) }
+button:active { background-color: rgb(6,40,89,0.2) }
 </style>
 </head>
 <body>
