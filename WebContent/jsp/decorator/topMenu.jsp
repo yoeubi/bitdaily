@@ -25,7 +25,13 @@
               <a class="nav-link" href="/bitdaily/jsp/recipe/recipeList.jsp">레시피</a>
             </li>
             <li class="nav-item">
-              <a href="/bitdaily/jsp/login/userinfo.jsp" style="text-decoration: none">　<img src="/bitdaily/images/icon/user.png" width="35px" height="35px"></a>
+              <a href="#" style="text-decoration: none">　<img src="/bitdaily/images/icon/trophy.png" width="31px" height="31px"></a>
+            </li>
+            <li class="nav-item">
+              <a href="/bitdaily/jsp/login/userinfo.jsp" style="text-decoration: none">　<img src="/bitdaily/images/icon/user.png" width="31px" height="31px"></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" style="text-decoration: none">　<img src="/bitdaily/images/icon/logout.png" width="37px" height="33px"></a>
             </li>
           </ul>
         </div>
