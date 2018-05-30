@@ -18,7 +18,7 @@ font-size: medium;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #C3E7FA;
+    background-color: rgb(6,40,89,0.4);
 }
 
 .subMenu > ul > li {
@@ -40,11 +40,11 @@ font-size: medium;
 
 /* Change the link color to #111 (black) on hover */
 .subMenu >  ul > li a:hover {
-    background-color: #27aae1;
+    background-color: #062859;
 }
 
 .sub_active {
-    background-color: #27aae1;
+    background-color: #062859;
 }
 
 .mainMenu { 
@@ -81,8 +81,7 @@ font-size: medium;
 	font-size: 20px;
 	margin-left: 20%;
 	font-weight: bold;
-	color: black;
-	color: #27aae1
+	color: #062859;
 }
 
 .writeStatis > p {
