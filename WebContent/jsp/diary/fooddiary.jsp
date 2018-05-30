@@ -111,7 +111,9 @@ a, a:hover {
 text-decoration: none;
 color : black;
 }
-
+#title { font-size: 25px;
+    padding: 20px;
+    margin: 10px 32px; }
 
 
 </style>
@@ -140,7 +142,8 @@ $("#nav-diary").addClass("active");
 	</ul>
 	</div>
 	
-		<div class="mainMenu">
+	<div class="mainMenu">
+	<p id="title"><img src="${pageContext.request.contextPath}/images/icon/fooddiary.png" width="40px"/> 오늘의 식단</p>
 	<div id="morning">
 	<div class="icon">아침</div>
 	<div>
