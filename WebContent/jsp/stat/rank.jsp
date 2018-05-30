@@ -17,7 +17,7 @@
 	}
 	
 	#calorie, #workout , #weight {
-		width : 30%;
+		width : 29%;
 		margin : 30px 18px;
 		height : 400px;
 		float: left;
@@ -104,6 +104,7 @@
 </head>
 <body>
 <div id="outer">
+	<br><br>
 	<div id="date">
 		<a href="#"><img src="/bitdaily/images/icon/before.png" width="30px" height="30px"></a>
 		<span>2018-05-21 ~ 2018-05-27</span>
