@@ -35,9 +35,9 @@
 	</div>
 	
 	<div class="mainMenu">
-		<div id="todaydiary"><img src="/bitdaily/images/111061-200.png"><span>오늘의 일기</span></div>
+		<p><img src="${pageContext.request.contextPath}/images/icon/diary.png"/> 오늘의 일기</p>
 		<div id="content">
-			<div id="titleregist"><input type="text" name="title" id="title" value="제목을 입력하세요"></div>
+			<div id="titleregist"><input type="text" name="title" id="title" placeholder="제목을 입력하세요"></div>
 			<form id="note">
 				<div id="summernote"></div>
 			</form>
