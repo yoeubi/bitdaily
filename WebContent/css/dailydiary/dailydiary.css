@@ -10,6 +10,7 @@
 #todaydiary , #noteregist , #titleregist, #note {
 	margin-top : 40px;
 	margin-left: 30px;
+	margin-bottom: 10px;
 }
 
 #desc {
@@ -22,6 +23,7 @@
 	width: 50px; height: 25px;
 	color: #00AFFF;
 	font-size: 13px;
+	margin-top: 10px;
 }
 
 

@@ -43,6 +43,8 @@
 			</form>
 			<div id="noteregist"><input><button>등록</button></div>
 		</div>
+		
+		
 	</div>
 
 </div><!-- end .diary -->
@@ -58,25 +60,13 @@
 	</div><br>
 	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
 </div>
-
 <script>
-      $('#summernote').summernote({
-   	  	toolbar: [
-   		    // [groupName, [list of button]]
-   		    ['style', ['bold', 'italic', 'underline', 'clear']],
-   		    ['font', ['strikethrough', 'superscript', 'subscript']],
-   		    ['fontsize', ['fontsize']],
-   		    ['color', ['color']],
-   		    ['para', ['ul', 'ol', 'paragraph']],
-   		    ['height', ['height']]
-   		],
-        placeholder: '일기를 입력하세요',
-        height: 300,
-        minHeight: 300,
-        maxHeight: 300, 
-        width : 810
-      });
+	
+	
 </script>
+
+
+<script src="summernote.js"></script>
 <script src="/bitdaily/jsp/stat/mini.js"></script>
 </body>
 </html>
