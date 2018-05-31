@@ -96,7 +96,8 @@
 	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
 </div>
 
-<script src="/bitdaily/jsp/stat/mini.js"></script>
+<script src="<c:url value='/jsp/stat/mini.js'/>"></script>
+<script src="<c:url value='/js/diary/exercisediary.js'/>"></script>
 
 </body>
 </html>

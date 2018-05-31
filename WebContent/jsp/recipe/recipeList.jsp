@@ -74,8 +74,6 @@
 <div id="pageing">[1][2][3][4][5]</div>
 <br>
 
-<script>
-
-</script>
+<script src="<c:url value='/js/recipe/recipeList.js'/>"></script>
 </body>
 </html>

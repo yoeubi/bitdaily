@@ -56,8 +56,6 @@
 <br><br><br><br><br><br><br>
 </div>
 
-<script>
-
-</script>
+<script src="<c:url value='/js/recipe/recipeDetail.js'/>"></script>
 </body>
 </html>
