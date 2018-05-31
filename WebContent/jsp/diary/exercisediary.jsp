@@ -9,66 +9,9 @@
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/diary/commondiary.css" rel="stylesheet">
-<style>
-.search-container {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-input#search-bar {
-  margin: 0px -75px 0px 0px;
-  width: 80%;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 1rem;
-  border: 1px solid #D0CFCE;
-  outline: none;
-}
-input#search-bar:focus {
-  border: 1px solid #008ABF;
-  transition: 0.35s ease;
-  color: #008ABF;
-}
-input#search-bar:focus::-webkit-input-placeholder {
-  transition: opacity 0.45s ease;
-  opacity: 0;
-}
-.search-icon {
-  position: relative;
-  float: right;
-  width: 75px;
-  height: 75px;
-  top: -15px;
-  right: 65px;
-}
-#title { font-size: 25px;
-    padding: 20px;
-    margin: 10px 32px; }
-table {
-	width: 80%;
-	margin: 0px 75px;
-	padding: 10px;
-}
-tr,td { padding: 0px 5px; }
-#exeHour {
-	border: 1px solid silver;
-	width: 60px;
-}
-span { font-weight: bold; font-size: 20px; }
-.footMenu { width: 100%; position:absolute; bottom:0px; padding: 25px; }
-button {
-	border: 1px solid #062859;
-	border-radius: 8px;
-	width: 50px; height: 25px;
-	color: #062859;
-	font-size: 13px;
-}
-button:hover { cursor: pointer; }
-button:focus { outline: none; }
-button:active { background-color: rgb(6,40,89,0.2) }
-</style>
+<link href="<c:url value='/css/diary/commondiary.css'/>" rel="stylesheet">
+<link href="<c:url value='/css/diary/exercisediary.css'/>" rel="stylesheet">
+<link href="<c:url value='/css/common/button.css'/>" rel="stylesheet">
 </head>
 <body>
 

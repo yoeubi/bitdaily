@@ -1,54 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/common/recipeWriteForm.css" rel="stylesheet">
-<style>
-* { color: #666; }
-.imgDiv {
-	width: 100%; height: 270px;
-	border: 1px solid #aaa;
-	overflow: hidden;
-}
-#outer { width: 100%; margin: 0 auto; float: left; }
-#titleDiv { clear: both; }
-#titleSpan { font-size: 25px; }
-#right { text-align: right; }
-#writer { float: right; position: relative; }
-hr { margin: 0px; }
-textarea {
-  width: 100%;
-  max-width: 100%;
-  height: 100px;
-  max-height: 300px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  border: solid 1px #b3aca7;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-button {
-	border: 1px solid #948f8b;;
-	border-radius: 8px;
-	width: 50px; height: 25px;
-	color: #948f8b;;
-	font-size: 13px;
-	margin-right: 70px;
-}
-button:hover { cursor: pointer; }
-button:focus { outline: none; }
-button:active { background-color: rgba(0,50,200,0.1) }
-</style>
+<link href="<c:url value='/css/recipe/input.css'/>" rel="stylesheet">
+<link href="<c:url value='/css/recipe/recipeDetail.css'/>" rel="stylesheet">
+<link href="<c:url value='/css/common/button.css'/>" rel="stylesheet">
 </head>
 <body>
 <br><br>

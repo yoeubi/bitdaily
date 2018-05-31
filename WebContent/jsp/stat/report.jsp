@@ -1,56 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<style>
-canvas {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-}
-.content_box {
-display: inline-block;
-margin: 5px;
-width : 70%;
-height: auto;
-}
-#side{
-text-align: center;
-padding: 25px;
-padding-top: 40px;
-margin: 5px;
-margin-top: 15px;
-display: inline-block;
-float: right;
-width: 28%;
-height: 405px;
-border: 1px solid #aaa;
-	border-radius: 20px;
-}
-#scale {
-text-align: center;
-margin: 15px auto;
-width: 98%;
-height: 300px;
-border: 1px solid #aaa;
-	border-radius: 20px;
-	padding: 13px;
-}
-#statistics {
-margin: 15px auto;
-width: 98%;
-height: 400px;
-border: 1px solid #aaa;
-border-radius: 20px;
-}
-.graphBox { margin : 20px 70px; }
-#outer { width: 100%; text-align: center; }
-#date {width: 100%; font-size: 20px;}
-</style>
+<link href="<c:url value='/css/stat/report.css'/>" rel="stylesheet">
 </head>
 <body>
 <br><br>

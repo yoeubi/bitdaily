@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <title>Bit Daily</title>
 <!--     Custom styles for this template -->
-    <link href="${pageContext.request.contextPath}/css/full-slider.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/slider/full-slider.css" rel="stylesheet">
     <style>
     .carousel-item{ 
        height: 610px;  

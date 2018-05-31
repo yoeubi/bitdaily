@@ -1,81 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<style>
-body { background-color: #e2dedb; }
-.search-container {
-  width: 100%;
-  display: inline;
-  margin: 0 auto;
-  text-align: right;
-}
-input#search-bar {
-  margin-right: 56px;
-  width: 20%;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 1rem;
-  border: 1px solid #D0CFCE;
-  outline: none;
-  float: right;
-}
-input#search-bar:focus {
-  border: 1px solid #008ABF;
-  transition: 0.35s ease;
-  color: #008ABF;
-}
-input#search-bar:focus::-webkit-input-placeholder {
-  transition: opacity 0.45s ease;
-  opacity: 0;
-}
-.search-icon {
-  position: relative;
-  float: right;
-  top: 10px;
-  right: -220px;
-}
-.content-box {
-	width: 25%; height: 360px;
-    margin: 30px 30px;
-	border: 1px solid #aaa;
-	display: inline-block;
-}
-.content-box:hover { border: 1px solid #000; }
-.imgDiv {
-	width: 100%; height: 270px;
-	border: 1px solid #aaa;
-	overflow: hidden;
-}
-#outer { width: 100%; text-align: center; margin: 0 auto; }
-.img { 
-	height: 360px; 
-	transition: all 0.3s;
-}
-.img:hover {
-	cursor: pointer;
-	transform: scale(1.05);
-}
-h4 { margin: 10px; }
-#pageing { text-align: center;}
-#title { font-size: 25px; }
-#clear { clear :both; }
-button {
-	border: 1px solid #948f8b;;
-	border-radius: 8px;
-	width: 50px; height: 25px;
-	color: #948f8b;;
-	font-size: 13px;
-	margin-right: 70px;
-}
-button:hover { cursor: pointer; }
-button:focus { outline: none; }
-button:active { background-color: rgba(0,50,200,0.1) }
-</style>
+<link href="<c:url value='/css/recipe/recipeList.css'/>" rel="stylesheet">
+<link href="<c:url value='/css/common/button.css'/>" rel="stylesheet">
 </head>
 <body>
 <br><br>

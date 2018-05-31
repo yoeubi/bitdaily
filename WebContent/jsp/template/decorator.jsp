@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title><sitemesh:write property="title" /></title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/common.css">
-<link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/slider/common.css">
+<link href="${pageContext.request.contextPath}/slider/bootstrap.min.css" rel="stylesheet">
 <sitemesh:write property="head" /> 
 <style type="text/css">
 </style>
