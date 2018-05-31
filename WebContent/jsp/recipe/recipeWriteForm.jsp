@@ -33,8 +33,6 @@
 	</div>
 </div>
 
-<script>
-
-</script>
+<script src="<c:url value='/js/recipe/recipeWriteForm.js'/>"></script>
 </body>
 </html>
