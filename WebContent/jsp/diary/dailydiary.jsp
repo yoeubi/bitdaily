@@ -60,13 +60,8 @@
 	</div><br>
 	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
 </div>
-<script>
-	
-	
-</script>
 
-
-<script src="summernote.js"></script>
-<script src="/bitdaily/jsp/stat/mini.js"></script>
+<script src="/bitdaily/js/diary/summernote.js"></script>
+<script src="/bitdaily/js/diary/mini.js"></script>
 </body>
 </html>
