@@ -63,5 +63,6 @@
 
 <script src="/bitdaily/js/diary/summernote.js"></script>
 <script src="/bitdaily/js/diary/mini.js"></script>
+<script src="/bitdaily/js/diary/diaryActive.js"></script>
 </body>
 </html>
