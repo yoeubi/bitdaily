@@ -22,23 +22,24 @@
 	font-size: 0.8em;
 }	
 #noteregist > button , #titleregist > button {
-	border: 1px solid #00AFFF;
+	border: 1px solid #062859;
 	border-radius: 8px;
 	width: 50px; height: 25px;
-	color: #00AFFF;
+	color: #062859;
 	font-size: 13px;
-	margin-top: 10px;
 }
 
 
 #noteregist > button:hover , #titleregist > button:hover {
-	background-color: rgba(0,50,200,0.1);
+	cursor: pointer;
 	
 }
 #noteregist > button:focus , #titleregist > button:focus {
 	outline: none;
 }
-
+#noteregist > button:active , #titleregist > button:active {
+	background-color: rgb(6,40,89,0.2)
+}
 .mainMenu > p { 
 	font-size: 25px;
     padding: 20px;
