@@ -11,8 +11,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-lite.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<link rel="stylesheet" href="/bitdaily/css/common/commondiary.css" >
-<link rel="stylesheet" href="/bitdaily/css/dailydiary/dailydiary.css" >
+<link rel="stylesheet" href="/bitdaily/css/diary/commondiary.css" >
+<link rel="stylesheet" href="/bitdaily/css/diary/dailydiary.css" >
 </head>
 <body>
 

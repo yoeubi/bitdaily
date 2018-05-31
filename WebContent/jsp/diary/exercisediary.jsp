@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/common/commondiary.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/diary/commondiary.css" rel="stylesheet">
 <style>
 .search-container {
   width: 100%;

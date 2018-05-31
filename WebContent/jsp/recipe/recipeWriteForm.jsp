@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<link href="${pageContext.request.contextPath}/css/common/recipeWriteForm.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/css/recipe/recipeWriteForm.css" rel="stylesheet">
 <style>
 textarea {
   width: 470px;
