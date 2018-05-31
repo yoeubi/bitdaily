@@ -6,123 +6,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>BIT DAILY</title>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <link href="${pageContext.request.contextPath}/css/diary/commondiary.css" rel="stylesheet">
-<style>
-.food_record {
-	width: 90%;
-}
-table {
-	margin: 20px auto;
-	padding: 10px;
-}
-.icon {
-	color: #27aae1;
-	font-weight: bold;
-	font-size: large;
-	width: 40px;
-	height: 40px;
-	padding: 1px 1px;
-	text-shadow: 1px 1px 1px #c6d5f2;
-	
-}
-.add {
-	margin-left:30px;
-	margin-top: 3px;
-	border: 1px dashed #c3e7fa;
-	width: 600px;
-	height: 30px;
-	border-radius: 20px;
-	display: inline-block;
-}
-.select {
-	margin-left:30px;
-	border: 1px dashed #c3e7fa;
-	width: 600px;
-	height: 280px;
-	border-radius: 20px;
-		display: inline-block;
-		padding : 20px 0;
-}
-.result {
-	margin-left:30px;
-	border: 1px dashed #c3e7fa;
-	width: 600px;
-	height: 300px;
-	border-radius: 20px;
-		display: inline-block;
-}
-.result_area {
-	float: left;
-	margin: 10px auto;
-}
-.result_pic {
-	margin: 8px 8px;
-}
-.result_content {
-	width: 185px;
-	height: 185px;
-	text-align: center;
-		padding: 4px 4px;
-			margin: 7px 7px;
-}
-.searchBox {
-	margin-left: 30px;
-	width: 460px;
-	border: 1px solid #aaa;
-}
-#search_list {
-	margin: 10px 50px;
-}
-.input_gram {
-	width: 80px;
-	float: right;
-	border: 1px solid #aaa;
-}
-#buttons {
-	text-align: right;
-}
-
-.buts {
-	border: 1px solid #00AFFF;
-	border-radius: 8px;
-	width: 50px; height: 25px;
-	color: #00AFFF;
-	font-size: 13px;
-}
-.buts:hover { cursor: pointer; }
-.buts:focus { outline: none; }
-.buts:active { background-color: rgba(0,50,200,0.1) }
-
-#morning, #lunch, #dinner, #snack {
-	width: 100%;
-	height: auto;
-	margin: 50px;
-	box-sizing: border-box;
-}
-
-.result_img {
-	border-radius: 20px;
-}
-
-a, a:hover {
-text-decoration: none;
-color : black;
-}
-#title { font-size: 25px;
-    padding: 20px;
-    margin: 10px 32px; }
-
-
-</style>
+<link href="${pageContext.request.contextPath}/css/diary/fooddiary.css" rel="stylesheet">
+<script defer src="${pageContext.request.contextPath}/js/diary/mini.js"></script>
+<script defer src="${pageContext.request.contextPath}/js/diary/fooddiary.js"></script>
 
 </head>
 <body>
-<script>
-$("#nav-diary").addClass("active");
-</script>
 <c:set var="today" value="<%=new java.util.Date()%>" />
 <div class="date">
 <a href="#"><img src="/bitdaily/images/icon/before.png" width="30px" height="30px"></a>
@@ -210,50 +103,8 @@ $("#nav-diary").addClass("active");
 	</div>
 	</div>
 
-
 </div><!-- end .diary -->
 
-<script type="text/javascript">
-	$(".foodAdd").on("click", function () {
-		var result = $(this).parent().parent();
-		$(this).parent().remove();
-		//search블럭 만드는 함수
-		makeSearchBox(result);
-	});
-	
-	function makeSearchBox(result) {
-		var search = "";
-		search += "<div class='select'>";
-		search += "<input type='text' name='foodName' class='searchBox'/> ";
-		search += "<img src='/bitdaily/images/icon/search.png' width='30px' height='30px'>";
-		search += "<a data-toggle='modal' href='#visionModal'><img src='/bitdaily/images/icon/camera.png' width='40px' height='40px'></a>";
-		search += "<div id='search_list'>";
-		search += "<input type='checkbox' name='rice' id='rice' value='1' /><lable for='rice'> 밥</lable>";
-		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
-		search += "<input type='checkbox' name='rice2' id='rice2' value='2' /><lable for='rice2'> 흑미밥</lable>";
-		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
-		search += "<input type='checkbox' name='rice3' id='rice3' value='3' /><lable for='rice3'> 잡곡밥</lable>";
-		search += "<input type='text' name='gram' class='input_gram' placeholder='　　gram'/><br><br>";
-		search += "<div id='buttons'>";
-		search += "<button type='button' class='buts cancle'>취소</button>　<button type='button' class='buts'>등록</button>";
-		search += "</div></div>";
-		result.html(search);
-	}
-	
-	$(".cancle").on("click", function () {
-	
-	//음식추가 버튼 만드는 함수...
-// 		makeAddButton();
-	});
- 
-// 	function makeList() {
-		
-// 	}
-
-// 	function makeAddButton() {
-		
-// 	}
-</script>
 
 <!-- 일일 통계 -->
 <div class="dailyStatistics">
@@ -266,9 +117,8 @@ $("#nav-diary").addClass("active");
 	</div><br>
 	<canvas id="pieCanvas" width="20%" height="20%"></canvas>
 </div>
-<script src="/bitdaily/jsp/stat/mini.js"></script>
-	<!-- 일일 통계  까지-->
 
+<!-- 일일 통계  까지-->
 
   <!-- Modal -->
   <div class="modal fade" id="visionModal" role="dialog">
@@ -293,10 +143,6 @@ $("#nav-diary").addClass("active");
       
     </div>
   </div>
-
-
-
-
 
 </body>
 </html>

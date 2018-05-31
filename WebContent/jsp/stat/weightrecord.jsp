@@ -7,73 +7,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>BIT DAILY</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<style>
-.content_box {
-display: inline-block;
-margin: 5px;
-width : 70%;
-height: auto;
-}
-
-#side{
-text-align: center;
-padding: 25px;
-padding-top: 40px;
-margin: 5px;
-margin-top: 15px;
-display: inline-block;
-float: right;
-width: 28%;
-height: 618px;
-border: 1px solid #aaa;
-border-radius: 20px;
-}
-#scale {
-text-align: center;
-margin: 15px auto;
-width: 98%;
-height: 300px;
-border: 1px solid #aaa;
-border-radius: 20px;
-}
-#weight_statistics {
-margin: 15px auto;
-width: 98%;
-height: 300px;
-border: 1px solid #aaa;
-border-radius: 20px;
-}
-.graphBox {
-margin : 20px 120px;
-}
-#weight {
-text-decoration: none;
-color : black;
-}
-.buts {
-	border: 1px solid #00AFFF;
-	border-radius: 8px;
-	width: 50px; height: 25px;
-	color: #00AFFF;
-	font-size: 13px;
-}
-.buts:hover { cursor: pointer; }
-.buts:focus { outline: none; }
-.buts:active { background-color: rgba(0,50,200,0.1) }
-#weightToday {
-border:0.5px solid #aaa;
-width: 100px;
-}
-</style>
+<link href="${pageContext.request.contextPath}/css/stat/weightrecord.css" rel="stylesheet">
+<script defer src="${pageContext.request.contextPath}/js/stat/weightrecord.js"></script>
 </head>
 <body>
-
-<script>
-$("#nav-weight").addClass("active");
-</script>
 
 <div class="content_box">
 <div id="scale">
@@ -88,7 +28,6 @@ $("#nav-weight").addClass("active");
 </div>
 </div>
 </div>
-
 
 <div id="side">
 <h2><img src="/bitdaily/images/icon/ruler.png" width="50px" height="50px"> 체중기록</h2><hr>
@@ -107,68 +46,7 @@ $("#nav-weight").addClass("active");
 	2018.05.18.　49kg	
 	<hr>
 	2018.05.17.　53kg	
-	
 </div>
-<script type="text/javascript">
-$("#weight").click(function () {
-	$(".but").html("<input type='text' name='weightToday' id='weightToday'>　<button class='buts'>등록</button>");
-});
-</script>
-<script type="text/javascript">
-var data = {
-	    labels: [
-	        "5/17", "5/18", "5/19", "5/20", "5/21", "5/22", "5/23"
-	    ],
-	    datasets: [
-	        {
-	            label: 'kg',
-	            data: [
-	                53, 49, 51, 55, 53, 48, 45
-	            ],
-	            backgroundColor: [
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)',
-	                'rgba(75, 192, 192, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',                                                               
-	                'rgba(255, 159, 64, 0.2)'
-	            ],
-	            borderColor: [
-	                'rgba(255,99,132,1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(75, 192, 192, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)'
-	            ],
-	            borderWidth: 0.5
-	        }
-	    ]
-	};
-var options = {
-	    animation: {
-	        animateScale: true
-	    },
-	    responsive: false,
-	    scales: {
-	        yAxes: [
-	            {
-	                ticks: {
-	                    beginAtZero: false                                                                    
-	                }
-	            }
-	        ]
-	    }
-	};
-var ctx = document.getElementById("lineCanvas").getContext('2d');                                           
-var myBarChart = new Chart(ctx, {
-    type: 'line',
-    data: data,
-    options: options
-});
-
-</script>
-
 
 </body>
 </html>
