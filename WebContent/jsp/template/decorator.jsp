@@ -28,8 +28,8 @@
 	</div>	
 	
   
-  <script src="${pageContext.request.contextPath}/css/vendor/jquery/jquery.min.js"></script>
-  <script src="${pageContext.request.contextPath}/css/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<c:url value="/slider/vendor/jquery/jquery.min.js"/> "></script>
+  <script src="<c:url value="/slider/vendor/bootstrap/js/bootstrap.bundle.min.js"/> "></script>
 </body>
 </html>
 
